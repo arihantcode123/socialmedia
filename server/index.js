@@ -7,7 +7,7 @@ const connectDB = require('./utils/db');
 const path = require('path');
 
 const corsOption={
-    origin:process.env.CORS_ORIGIN || "http://localhost:5173",
+    origin:"https://socialmedia-glsv.onrender.com",
     method:"GET,POST,PUT,DELETE,PATCH,HEAD",
     credentials:true,
 }

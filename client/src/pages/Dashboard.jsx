@@ -6,7 +6,7 @@ export default function Dashboard() {
     const [userData,setuserData]=useState([])
     const fetchUserData = async () => {
         try {
-            const response = await fetch(`http://localhost:5000/api/dashboard`, {
+            const response = await fetch(`https://socialmedia-glsv.onrender.com/api/dashboard`, {
                 method: "GET",
             })
             // console.log(response);
@@ -39,7 +39,7 @@ export default function Dashboard() {
                                 <td>
                                     {row.picture ? (
                                         <img
-                                            src={`http://localhost:5000/images/${row.picture}`}
+                                            src={`https://socialmedia-glsv.onrender.com/images/${row.picture}`}
                                             height="100px"
                                             widht="100px"
                                             alt="Not Available"
